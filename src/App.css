@@ -1,0 +1,256 @@
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #b3b3b3;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px #b3b3b3;
+    background-color: #AAA;
+}
+
+body {
+    background-color: #e3e6ea;
+}
+html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+#Main-Container {
+    width: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e6ea;
+}
+
+#Message-List-Container {
+    width: 100%;
+    height: 100%;
+    max-width: 550px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.19);
+    overflow-y: auto;
+    min-height: 0px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+#Message-List {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#Add-Message-Form {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+}
+
+#Send-Button {
+    width: 30%;
+    height: 40px;
+    background-color: #a0f7a6;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Helvetica";
+    font-size: 24px;
+    padding: 5px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.19);
+    outline: none;
+    border: none;
+}
+
+#Send-Button:hover {
+    cursor: pointer;
+}
+
+#Send-Button:active {
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    background-color: #91e097;
+    font-size: 22px;
+}
+
+#Input-Text {
+    width: 90%;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    font-family: "Helvetica";
+    font-size: 15px;
+    overflow: scroll;
+    padding: 5px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.19);
+    margin-right: 5px;
+}
+
+#Input-Text:active {
+    outline: none;
+}
+#Input-Text:focus {
+    outline: none;
+}
+
+#Log-Container {
+    width: 500px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Log-Container-Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Caption {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+}
+
+#Login-Input {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-color: transparent;
+    padding: 5px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+#Login-Input:focus {
+    outline: none;
+}
+
+#Submit-Button {
+    width: 150px;
+    height: 40px;
+    background-color: #8cd2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Helvetica";
+    font-size: 24px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.19);
+    outline: none;
+    border: none;
+}
+
+#Submit-Button {
+    user-select: none;
+}
+
+#Submit-Button:hover {
+    cursor: pointer;
+}
+
+#Submit-Button:active {
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    background-color: #79c8f2;
+    font-size: 31px;
+}
+
+#Error {
+    margin-top: 10px;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+
+.Message {
+    max-width: 50%;
+    height: auto;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.19);
+    margin: 5px;
+    overflow-wrap: break-word;
+}
+
+.Nickname {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    background-color: transparent;
+    min-width: 10%;
+    word-wrap: break-word;
+}
+
+.Data {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    padding: 5px;
+    background-color: transparent;
+    word-break: normal;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    align-self: flex-end;
+}
+
+.Mess-Text {
+    width: 100%;
+    word-wrap: break-word;
+    align-self: flex-start;
+}
+
+.Quest {
+    background-color: #a2c4f2;
+    align-self: flex-start;
+}
+
+.Self {
+    background-color: #a0f7a6;;
+    align-self: flex-end;
+}
+
+.Mess-Date {
+    align-self: flex-end;
+    font-size: 11px;
+}
+
+html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+    overflow: auto;
+}
